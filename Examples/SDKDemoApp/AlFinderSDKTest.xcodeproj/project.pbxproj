@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		711ACBAA2EF40C0A0067BA37 /* AlFinderSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 711ACBA92EF40C0A0067BA37 /* AlFinderSDK */; };
+		711ACBBD2EF428890067BA37 /* AlFinderSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 711ACBBC2EF428890067BA37 /* AlFinderSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		711ACAD52EF1A5C70067BA37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711ACABF2EF1A5C60067BA37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 711ACAC62EF1A5C60067BA37;
+			remoteInfo = AlFinderSDKTest;
+		};
+		711ACADF2EF1A5C70067BA37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711ACABF2EF1A5C60067BA37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 711ACAC62EF1A5C60067BA37;
+			remoteInfo = AlFinderSDKTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		711ACAC72EF1A5C60067BA37 /* AlFinderSDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlFinderSDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		711ACAD42EF1A5C70067BA37 /* AlFinderSDKTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlFinderSDKTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		711ACADE2EF1A5C70067BA37 /* AlFinderSDKTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlFinderSDKTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		711ACAC92EF1A5C60067BA37 /* AlFinderSDKTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AlFinderSDKTest;
+			sourceTree = "<group>";
+		};
+		711ACAD72EF1A5C70067BA37 /* AlFinderSDKTestTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AlFinderSDKTestTests;
+			sourceTree = "<group>";
+		};
+		711ACAE12EF1A5C70067BA37 /* AlFinderSDKTestUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AlFinderSDKTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		711ACAC42EF1A5C60067BA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711ACBBD2EF428890067BA37 /* AlFinderSDK in Frameworks */,
+				711ACBAA2EF40C0A0067BA37 /* AlFinderSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711ACAD12EF1A5C70067BA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711ACADB2EF1A5C70067BA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		711ACABE2EF1A5C60067BA37 = {
+			isa = PBXGroup;
+			children = (
+				711ACAC92EF1A5C60067BA37 /* AlFinderSDKTest */,
+				711ACAD72EF1A5C70067BA37 /* AlFinderSDKTestTests */,
+				711ACAE12EF1A5C70067BA37 /* AlFinderSDKTestUITests */,
+				711ACAC82EF1A5C60067BA37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		711ACAC82EF1A5C60067BA37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				711ACAC72EF1A5C60067BA37 /* AlFinderSDKTest.app */,
+				711ACAD42EF1A5C70067BA37 /* AlFinderSDKTestTests.xctest */,
+				711ACADE2EF1A5C70067BA37 /* AlFinderSDKTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		711ACAC62EF1A5C60067BA37 /* AlFinderSDKTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711ACAE82EF1A5C70067BA37 /* Build configuration list for PBXNativeTarget "AlFinderSDKTest" */;
+			buildPhases = (
+				711ACAC32EF1A5C60067BA37 /* Sources */,
+				711ACAC42EF1A5C60067BA37 /* Frameworks */,
+				711ACAC52EF1A5C60067BA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				711ACAC92EF1A5C60067BA37 /* AlFinderSDKTest */,
+			);
+			name = AlFinderSDKTest;
+			packageProductDependencies = (
+				711ACBA92EF40C0A0067BA37 /* AlFinderSDK */,
+				711ACBBC2EF428890067BA37 /* AlFinderSDK */,
+			);
+			productName = AlFinderSDKTest;
+			productReference = 711ACAC72EF1A5C60067BA37 /* AlFinderSDKTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		711ACAD32EF1A5C70067BA37 /* AlFinderSDKTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711ACAEB2EF1A5C70067BA37 /* Build configuration list for PBXNativeTarget "AlFinderSDKTestTests" */;
+			buildPhases = (
+				711ACAD02EF1A5C70067BA37 /* Sources */,
+				711ACAD12EF1A5C70067BA37 /* Frameworks */,
+				711ACAD22EF1A5C70067BA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				711ACAD62EF1A5C70067BA37 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				711ACAD72EF1A5C70067BA37 /* AlFinderSDKTestTests */,
+			);
+			name = AlFinderSDKTestTests;
+			packageProductDependencies = (
+			);
+			productName = AlFinderSDKTestTests;
+			productReference = 711ACAD42EF1A5C70067BA37 /* AlFinderSDKTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		711ACADD2EF1A5C70067BA37 /* AlFinderSDKTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711ACAEE2EF1A5C70067BA37 /* Build configuration list for PBXNativeTarget "AlFinderSDKTestUITests" */;
+			buildPhases = (
+				711ACADA2EF1A5C70067BA37 /* Sources */,
+				711ACADB2EF1A5C70067BA37 /* Frameworks */,
+				711ACADC2EF1A5C70067BA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				711ACAE02EF1A5C70067BA37 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				711ACAE12EF1A5C70067BA37 /* AlFinderSDKTestUITests */,
+			);
+			name = AlFinderSDKTestUITests;
+			packageProductDependencies = (
+			);
+			productName = AlFinderSDKTestUITests;
+			productReference = 711ACADE2EF1A5C70067BA37 /* AlFinderSDKTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		711ACABF2EF1A5C60067BA37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					711ACAC62EF1A5C60067BA37 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					711ACAD32EF1A5C70067BA37 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 711ACAC62EF1A5C60067BA37;
+					};
+					711ACADD2EF1A5C70067BA37 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 711ACAC62EF1A5C60067BA37;
+					};
+				};
+			};
+			buildConfigurationList = 711ACAC22EF1A5C60067BA37 /* Build configuration list for PBXProject "AlFinderSDKTest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 711ACABE2EF1A5C60067BA37;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				711ACBBB2EF428890067BA37 /* XCRemoteSwiftPackageReference "alfinder-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 711ACAC82EF1A5C60067BA37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				711ACAC62EF1A5C60067BA37 /* AlFinderSDKTest */,
+				711ACAD32EF1A5C70067BA37 /* AlFinderSDKTestTests */,
+				711ACADD2EF1A5C70067BA37 /* AlFinderSDKTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		711ACAC52EF1A5C60067BA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711ACAD22EF1A5C70067BA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711ACADC2EF1A5C70067BA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		711ACAC32EF1A5C60067BA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711ACAD02EF1A5C70067BA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711ACADA2EF1A5C70067BA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		711ACAD62EF1A5C70067BA37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 711ACAC62EF1A5C60067BA37 /* AlFinderSDKTest */;
+			targetProxy = 711ACAD52EF1A5C70067BA37 /* PBXContainerItemProxy */;
+		};
+		711ACAE02EF1A5C70067BA37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 711ACAC62EF1A5C60067BA37 /* AlFinderSDKTest */;
+			targetProxy = 711ACADF2EF1A5C70067BA37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		711ACAE62EF1A5C70067BA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		711ACAE72EF1A5C70067BA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		711ACAE92EF1A5C70067BA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testingalfindersdk.gemue.com.AlFinderSDKTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		711ACAEA2EF1A5C70067BA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testingalfindersdk.gemue.com.AlFinderSDKTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		711ACAEC2EF1A5C70067BA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testingalfindersdk.gemue.com.AlFinderSDKTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlFinderSDKTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlFinderSDKTest";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		711ACAED2EF1A5C70067BA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testingalfindersdk.gemue.com.AlFinderSDKTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlFinderSDKTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlFinderSDKTest";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		711ACAEF2EF1A5C70067BA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testingalfindersdk.gemue.com.AlFinderSDKTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = AlFinderSDKTest;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		711ACAF02EF1A5C70067BA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testingalfindersdk.gemue.com.AlFinderSDKTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = AlFinderSDKTest;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		711ACAC22EF1A5C60067BA37 /* Build configuration list for PBXProject "AlFinderSDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711ACAE62EF1A5C70067BA37 /* Debug */,
+				711ACAE72EF1A5C70067BA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		711ACAE82EF1A5C70067BA37 /* Build configuration list for PBXNativeTarget "AlFinderSDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711ACAE92EF1A5C70067BA37 /* Debug */,
+				711ACAEA2EF1A5C70067BA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		711ACAEB2EF1A5C70067BA37 /* Build configuration list for PBXNativeTarget "AlFinderSDKTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711ACAEC2EF1A5C70067BA37 /* Debug */,
+				711ACAED2EF1A5C70067BA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		711ACAEE2EF1A5C70067BA37 /* Build configuration list for PBXNativeTarget "AlFinderSDKTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711ACAEF2EF1A5C70067BA37 /* Debug */,
+				711ACAF02EF1A5C70067BA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		711ACBBB2EF428890067BA37 /* XCRemoteSwiftPackageReference "alfinder-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AI-Finder-Inc/alfinder-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		711ACBA92EF40C0A0067BA37 /* AlFinderSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AlFinderSDK;
+		};
+		711ACBBC2EF428890067BA37 /* AlFinderSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 711ACBBB2EF428890067BA37 /* XCRemoteSwiftPackageReference "alfinder-ios-sdk" */;
+			productName = AlFinderSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 711ACABF2EF1A5C60067BA37 /* Project object */;
+}

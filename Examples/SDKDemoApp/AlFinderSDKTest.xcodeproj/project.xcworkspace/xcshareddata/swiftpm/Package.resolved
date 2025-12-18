@@ -1,0 +1,15 @@
+{
+  "originHash" : "46be37c9ec4d8f585aef70df357e99c1e070db66c244e1b1da9ec2a1abfe3cd8",
+  "pins" : [
+    {
+      "identity" : "alfinder-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AI-Finder-Inc/alfinder-ios-sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f3a6f9d14f4cb6183fd179e53c2abfe4d2f2c843"
+      }
+    }
+  ],
+  "version" : 3
+}
