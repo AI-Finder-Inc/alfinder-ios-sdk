@@ -1,0 +1,197 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios26.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AlFinderSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension AlFinderSDK.AlFinderClient {
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  final nonisolated(nonsending) public func getActiveRecommendations() async throws -> AlFinderSDK.AlFinderClient.ActiveRecommendationsResponse
+  #endif
+}
+extension AlFinderSDK.AlFinderClient {
+  #if compiler(>=5.3) && $NonescapableTypes && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) final public func getRecommendations(for placement: AlFinderSDK.AlFinderClient.RecommendationPlacement, productIds: [Swift.String]? = nil, lang: AlFinderSDK.AlFinderClient.Lang? = nil) async throws -> AlFinderSDK.AlFinderClient.RecommendationsResponse
+  #endif
+}
+extension AlFinderSDK.AlFinderClient {
+  public enum RecommendationPlacement : Swift.String, Swift.Decodable, Swift.Sendable, Swift.Hashable {
+    case productDetailsPage
+    case homePage
+    case cartPage
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum RecommendationType : Swift.String, Swift.Decodable, Swift.Sendable, Swift.Hashable {
+    case relatedProducts
+    case aiComplementary
+    case bestSeller
+    case recentlyViewed
+    case trendingProducts
+    case recentlyAdded
+    case mostViewed
+    case recentlyPurchased
+    case frequentlyBoughtTogether
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct ActiveRecommendationsResponse : Swift.Decodable, Swift.Sendable {
+    public let map: [AlFinderSDK.AlFinderClient.RecommendationPlacement : [AlFinderSDK.AlFinderClient.RecommendationType]]
+    public init(from decoder: any Swift.Decoder) throws
+    public func types(for placement: AlFinderSDK.AlFinderClient.RecommendationPlacement) -> [AlFinderSDK.AlFinderClient.RecommendationType]
+  }
+  public struct RecommendationsResponse : Swift.Decodable, Swift.Sendable {
+    public let results: [AlFinderSDK.AlFinderClient.RecommendationBlock]
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct RecommendationBlock : Swift.Decodable, Swift.Sendable {
+    public let recommendation: AlFinderSDK.AlFinderClient.RecommendationConfig
+    public let products: [AlFinderSDK.AlFinderClient.Product]
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct RecommendationConfig : Swift.Decodable, Swift.Sendable {
+    public let pageType: AlFinderSDK.AlFinderClient.RecommendationPlacement
+    public let type: AlFinderSDK.AlFinderClient.RecommendationType
+    public let title: Swift.String?
+    public let titleEn: Swift.String?
+    public let titlePosition: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension AlFinderSDK.AlFinderClient {
+  #if compiler(>=5.3) && $NonescapableTypes && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) final public func searchProducts(query: Swift.String, limit: Swift.Int = 8, page: Swift.Int = 1, lang: AlFinderSDK.AlFinderClient.Lang? = nil) async throws -> AlFinderSDK.AlFinderClient.SearchProductsResponse
+  #endif
+}
+extension AlFinderSDK.AlFinderClient {
+  public struct SearchProductsResponse : Swift.Decodable, Swift.Sendable {
+    public let results: AlFinderSDK.AlFinderClient.Results
+    public let meta: AlFinderSDK.AlFinderClient.Meta
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Results : Swift.Decodable, Swift.Sendable {
+    public let products: [AlFinderSDK.AlFinderClient.Product]
+    public let filters: [AlFinderSDK.AlFinderClient.Filter]
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Product : Swift.Decodable, Swift.Sendable {
+    public let id: Swift.Int?
+    public let productId: Swift.String?
+    public let name: AlFinderSDK.AlFinderClient.LocalizedText
+    public let description: AlFinderSDK.AlFinderClient.LocalizedText?
+    public let type: Swift.String?
+    public let isTaxable: Swift.Bool?
+    public let sku: Swift.String?
+    public let price: Swift.Double?
+    public let discountedPrice: Swift.Double?
+    public let discountStartDate: Swift.String?
+    public let discountEndDate: Swift.String?
+    public let currency: Swift.String?
+    public let url: Swift.String?
+    public let urlTrans: AlFinderSDK.AlFinderClient.LocalizedURL?
+    public let mainImage: Swift.String?
+    public let isAvailable: Swift.Bool?
+    public let categories: [AlFinderSDK.AlFinderClient.Category]?
+    public let media: [AlFinderSDK.AlFinderClient.Media]?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct LocalizedText : Swift.Decodable, Swift.Sendable {
+    public let ar: Swift.String?
+    public let en: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct LocalizedURL : Swift.Decodable, Swift.Sendable {
+    public let ar: Swift.String?
+    public let en: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Category : Swift.Decodable, Swift.Sendable {
+    public let name: AlFinderSDK.AlFinderClient.LocalizedText
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Media : Swift.Decodable, Swift.Sendable {
+    public let url: Swift.String?
+    public let type: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Filter : Swift.Decodable, Swift.Sendable {
+    public init()
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Meta : Swift.Decodable, Swift.Sendable {
+    public let pageNumber: Swift.Int?
+    public let pageSize: Swift.Int?
+    public let prevPage: Swift.Int?
+    public let nextPage: Swift.Int?
+    public let total: Swift.Int?
+    public let totalPages: Swift.Int?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+@_hasMissingDesignatedInitializers final public class AlFinderClient : @unchecked Swift.Sendable {
+  public static let shared: AlFinderSDK.AlFinderClient
+  public struct Configuration : Swift.Sendable {
+    public let baseURL: Foundation.URL
+    public let storeId: Swift.String
+    public let provider: AlFinderSDK.AlFinderClient.Provider
+    public let timeout: Foundation.TimeInterval
+    public let defaultLang: AlFinderSDK.AlFinderClient.Lang
+    public let storeURL: Foundation.URL
+    public init(baseURL: Foundation.URL = URL(string: "https://widget.alfinder.ai/v1/stores")!, storeId: Swift.String, provider: AlFinderSDK.AlFinderClient.Provider, timeout: Foundation.TimeInterval = 30, defaultLang: AlFinderSDK.AlFinderClient.Lang = .en)
+  }
+  public static func configure(baseURL: Foundation.URL = URL(string: "https://widget-staging.alfinder.ai/v1/stores")!, storeId: Swift.String, provider: AlFinderSDK.AlFinderClient.Provider, timeout: Foundation.TimeInterval = 30, defaultLang: AlFinderSDK.AlFinderClient.Lang = .en)
+  @objc deinit
+}
+extension AlFinderSDK.AlFinderClient {
+  public enum Provider : Swift.String, Swift.Sendable {
+    case salla
+    case zid
+    case woocommerce
+    case shopify
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Lang : Swift.String, Swift.Sendable {
+    case ar, en
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public enum SDKError : Swift.Error, Swift.Sendable {
+  case notConfigured
+  case invalidURL
+  case invalidResponse
+  case httpError(status: Swift.Int, body: Swift.String?)
+  case decoding(any Swift.Error)
+}
+extension AlFinderSDK.AlFinderClient.RecommendationPlacement : Swift.RawRepresentable {}
+extension AlFinderSDK.AlFinderClient.RecommendationType : Swift.RawRepresentable {}
+extension AlFinderSDK.AlFinderClient.Provider : Swift.Equatable {}
+extension AlFinderSDK.AlFinderClient.Provider : Swift.Hashable {}
+extension AlFinderSDK.AlFinderClient.Provider : Swift.RawRepresentable {}
+extension AlFinderSDK.AlFinderClient.Lang : Swift.Equatable {}
+extension AlFinderSDK.AlFinderClient.Lang : Swift.Hashable {}
+extension AlFinderSDK.AlFinderClient.Lang : Swift.RawRepresentable {}
