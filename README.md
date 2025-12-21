@@ -2,7 +2,6 @@
 //  README.md
 //  
 //
-//  Created by Mina Haleem on 18.12.25.
 //
 
 # AlFinderSDK
